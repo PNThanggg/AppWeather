@@ -1,0 +1,50 @@
+name: weather
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # Network
+  dio: ^4.0.6
+  pretty_dio_logger: ^1.1.1
+  connectivity_plus: ^3.0.2
+
+  # Get location
+  geolocator: ^9.0.2
+  geocoding: ^2.0.5
+
+  intl: ^0.17.0
+  flutter_svg: ^1.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/svg/
+    - lib/assets/png/
+
+  fonts:
+    - family: Sarabun
+      fonts:
+        - asset: lib/assets/font/Sarabun-Regular.ttf
+          weight: 400
+    - family: Nunito
+      fonts:
+        - asset: lib/assets/font/Nunito-Light.ttf
+          weight: 300
+        - asset: lib/assets/font/Nunito-Medium.ttf
+          weight: 500
