@@ -72,7 +72,7 @@ class WeatherResponse {
 class CurrentWeather {
   final double? temperature;
   final double? windspeed;
-  final double? winddirection;
+  final int? winddirection;
   final int? weathercode;
   final String? time;
 
@@ -87,7 +87,7 @@ class CurrentWeather {
   CurrentWeather.fromJson(Map<String, dynamic> json)
       : temperature = json['temperature'] as double?,
         windspeed = json['windspeed'] as double?,
-        winddirection = json['winddirection'] as double?,
+        winddirection = json['winddirection'] as int?,
         weathercode = json['weathercode'] as int?,
         time = json['time'] as String?;
 
